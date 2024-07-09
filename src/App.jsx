@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import Header from "./components/header";
-import MainMenu from "./components/mainMenu";
-import ModulBewertungErstellen from "./components/modulBewertungErstellen";
+import { Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import MainMenu from "./components/MainMenu";
+import ModulBewertungErstellen from "./components/ModulBewertungErstellen";
 import ModulBewertung from "./components/ModulBewertung";
 
 class App extends Component {
@@ -11,8 +12,13 @@ class App extends Component {
       <>
         <Header />
         <MainMenu />
-        <ModulBewertungErstellen />
-        <ModulBewertung />
+        <Routes>
+          <Route
+            path="ModulBewertungErstellen"
+            component={ModulBewertungErstellen}
+          />
+          <Route path="/ModulBewertung" component={ModulBewertung} />
+        </Routes>
       </>
     );
   }
