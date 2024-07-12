@@ -51,11 +51,17 @@
   padding-right: 0;
 }
 
-.ModulBewertungListe-container {
-  padding: 20px;
+.ModulBewertungListe-container {  
   background-color: #f8f9fa;
   border: 1px solid #c7e0fa;
   border-radius: 5px;
+  width: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.buttonList-container {
+  margin-top: 50px;
+  margin-left: 25%;
 }
