@@ -5,20 +5,20 @@ const MainMenu = () => {
   return (
     <div className="menu-container">
       <div className="container">
-        <div className="row text-center g-4">
+        <div className="row text-center">
           <div className="col-md">
-            <div className="card" styles={{ width: "16rem" }}>
+            <div className="card">
               <img
                 src="./images/teachers-rating.jpg"
-                class="card-img-top"
+                className="card-img-top"
                 alt="..."
               />
-              <div className="card shadow">
+              <div className="shadow p-4 bg-body-tertiary rounded">
                 <div className="card-body">
-                  <h5 className="card-title pt-3 pb-2">Modul Bewertung</h5>
+                  <h2 className="card-title pt-3 pb-2">Modul Bewertung</h2>
                   <Link
-                    to="ModulBewertungErstellen"
-                    class="btn btn-primary px-4"
+                    to="/ModulBewertungErstellen"
+                    className="btn btn-primary px-4"
                   >
                     Erstellen
                   </Link>
@@ -28,12 +28,12 @@ const MainMenu = () => {
           </div>
 
           <div className="col-md">
-            <div className="card" styles={{ width: "16rem" }}>
-              <img src="./images/goal.jpg" class="card-img-top" alt="..." />
-              <div className="card shadow">
+            <div className="card">
+              <img src="./images/goal.jpg" className="card-img-top" alt="..." />
+              <div className="shadow p-4 bg-body-tertiary rounded">
                 <div className="card-body">
-                  <h5 className="card-title pt-3 pb-2">Lernzielkontrolle</h5>
-                  <Link to="/" class="btn btn-primary px-4">
+                  <h2 className="card-title pt-3 pb-2">Lernzielkontrolle</h2>
+                  <Link to="/" className="btn btn-primary">
                     Erstellen
                   </Link>
                 </div>
