@@ -30,15 +30,12 @@ const Header = () => {
               </a>
             </li>
             <li className="nav-item">
-              <Link
-                to={{
-                  pathname: "/LogOut",
-                  state: { projectTitle: projectTitle },
-                }}
+              <a
+                href="https://www.mischok.academy"
                 className="link-light nav-link-space"
               >
                 Log-out
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
