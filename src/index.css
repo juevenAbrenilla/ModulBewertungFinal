@@ -65,3 +65,10 @@
   margin-top: 50px;
   margin-left: 25%;
 }
+
+.login-container {
+  height: 100vh;
+  background-image: url('/loginbackground.jpg');
+  background-size: cover;
+  background-position: center;
+}

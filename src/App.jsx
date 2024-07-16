@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import LogInPage from "./components/LogInPage";
 import Header from "./components/Header";
 import MainMenu from "./components/MainMenu";
 import ModulBewertungErstellen from "./components/ModulBewertungErstellen";
@@ -9,6 +10,7 @@ import ModulBewertungListe from "./components/ModulBewertungListe";
 const App = () => {
   return (
     <>
+      <LogInPage />
       <Header />
       <Routes>
         <Route path="/" element={<MainMenu />} />
