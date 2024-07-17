@@ -11,9 +11,9 @@ import LogOutPage from "./components/LogOutPage";
 const App = () => {
   return (
     <>
-      <LogInPage />
       <Header />
       <Routes>
+        <Route path="/" element={<LogInPage />} />
         <Route path="/" element={<MainMenu />} />
         <Route
           path="/ModulBewertungErstellen"
@@ -22,6 +22,7 @@ const App = () => {
         <Route path="/ModulBewertung" element={<ModulBewertung />} />
         <Route path="/MainMenu" element={<MainMenu />} />
         <Route path="/ModulBewertungListe" element={<ModulBewertungListe />} />
+
         <Route path="/LogOutPage" element={<LogOutPage />} />
       </Routes>
     </>

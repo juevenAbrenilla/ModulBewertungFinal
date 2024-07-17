@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class LogInPage extends Component {
   state = {};
@@ -36,9 +37,9 @@ class LogInPage extends Component {
 
               <a href="/">Can't access your account?</a>
               <div className="exitbutton-container">
-                <button className="button-exit" href="LogOutPage">
-                  Exit
-                </button>
+                <Link to="/LogOutPage">
+                  <button className="button-exit">Exit</button>
+                </Link>
               </div>
             </div>
           </div>
