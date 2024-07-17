@@ -6,6 +6,7 @@ import MainMenu from "./components/MainMenu";
 import ModulBewertungErstellen from "./components/ModulBewertungErstellen";
 import ModulBewertung from "./components/ModulBewertung";
 import ModulBewertungListe from "./components/ModulBewertungListe";
+import LogOutPage from "./components/LogOutPage";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/ModulBewertung" element={<ModulBewertung />} />
         <Route path="/MainMenu" element={<MainMenu />} />
         <Route path="/ModulBewertungListe" element={<ModulBewertungListe />} />
+        <Route path="/LogOutPage" element={<LogOutPage />} />
       </Routes>
     </>
   );
