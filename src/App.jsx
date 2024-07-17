@@ -14,15 +14,12 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<LogInPage />} />
-        <Route path="/" element={<MainMenu />} />
-        <Route
-          path="/ModulBewertungErstellen"
-          element={<ModulBewertungErstellen />}
+        <Route path="/mainmenu" element={<MainMenu />} />
+        path="/ModulBewertungErstellen" element={<ModulBewertungErstellen />}
         />
         <Route path="/ModulBewertung" element={<ModulBewertung />} />
         <Route path="/MainMenu" element={<MainMenu />} />
         <Route path="/ModulBewertungListe" element={<ModulBewertungListe />} />
-
         <Route path="/LogOutPage" element={<LogOutPage />} />
       </Routes>
     </>
