@@ -10,14 +10,13 @@ const ModulBewertungListe = () => {
         const response = await fetch(
           "https://academy-u202309-020-cc517cb3324e.herokuapp.com/api/dokubewertung"
         );
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
         const data = await response.json();
-        const filteredData = data.map((project) => ({
-          id: project.id,
-          titel: project.titel,
-        }));
-        setProjects(filteredData);
+        setProjects(data);
       } catch (error) {
-        console.error("Fehler beim Abrufen der Projektdaten:", error);
+        console.error("There was a problem fetching the projects:", error);
       }
     };
 
@@ -32,13 +31,13 @@ const ModulBewertungListe = () => {
             <thead>
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">Projekt Titel</th>
+                <th scope="col">Projekt Title</th>
               </tr>
             </thead>
             <tbody>
-              {projects.map((project, index) => (
+              {projects.map((project) => (
                 <tr key={project.id}>
-                  <th scope="row">{index + 1}</th>
+                  <th scope="row">{project.id}</th>
                   <td>{project.titel}</td>
                 </tr>
               ))}
@@ -47,13 +46,10 @@ const ModulBewertungListe = () => {
         </div>
       </div>
       <Link
-        to={{
-          pathname: "/MainMenu",
-          state: { projectTitle: "" },
-        }}
+        to="/MainMenu"
         className="btn btn-dark buttons-m buttonList-container"
       >
-        Züruck
+        Zurück
       </Link>
     </>
   );
