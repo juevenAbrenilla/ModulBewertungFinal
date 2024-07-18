@@ -23,7 +23,7 @@ class LogInPage extends Component {
             <div className="row text-center">
               <h1 className="h1LogIn">Modul Bewertung </h1>
               <p>(Please sign-in by clicking the Microsoft Logo)</p>
-              <a href="/">
+              <a href="https://academy-u202309-020-cc517cb3324e.herokuapp.com/">
                 <img
                   src={microsoftLogo}
                   alt="Microsoft Logo"
