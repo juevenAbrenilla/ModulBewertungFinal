@@ -9,7 +9,7 @@ const MainMenu = () => {
           <div className="col-md">
             <div className="card">
               <img
-                src="./images/teachers-rating.jpg"
+                src="../images/teachers-rating.jpg"
                 className="card-img-top"
                 alt="..."
               />
@@ -29,7 +29,11 @@ const MainMenu = () => {
 
           <div className="col-md">
             <div className="card">
-              <img src="./images/goal.jpg" className="card-img-top" alt="..." />
+              <img
+                src="../images/goal.jpg"
+                className="card-img-top"
+                alt="..."
+              />
               <div className="shadow p-4 bg-body-tertiary rounded">
                 <div className="card-body">
                   <h2 className="card-title pt-3 pb-2">Lernzielkontrolle</h2>

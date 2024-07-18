@@ -8,7 +8,7 @@ const Header = () => {
     <nav className="navbar navbar-expand-md">
       <div className="container">
         <div className="logo-container">
-          <img src="./images/WhiteLogo.svg" alt="Mischok Logo" />
+          <img src="../images/WhiteLogo.svg" alt="Mischok Logo" />
         </div>
         <p className="header-title">Modul Bewertung</p>
         <div className="collapse navbar-collapse">
