@@ -10,7 +10,7 @@ const ModulBewertungListe = () => {
     const fetchProjects = async () => {
       try {
         const response = await fetch(
-          "https://academy-u202309-020-cc517cb3324e.herokuapp.com/api/dokubewertung"
+          "https://cors-anywhere.herokuapp.com/https://academy-u202309-020-cc517cb3324e.herokuapp.com/api/dokubewertung"
         );
         if (!response.ok) {
           throw new Error("Network response was not ok");
