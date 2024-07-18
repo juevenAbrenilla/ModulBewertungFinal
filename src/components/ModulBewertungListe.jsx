@@ -5,6 +5,7 @@ const ModulBewertungListe = () => {
   const [projects, setProjects] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
+  const backgroundImage = require("../images/bluebackground01.jpg");
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -44,6 +45,14 @@ const ModulBewertungListe = () => {
 
   return (
     <>
+      <div
+        style={{
+          height: "100vh",
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      ></div>
       <div className="ModulBewertungListe-container">
         <div className="container">
           <table className="table">
