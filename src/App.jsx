@@ -14,7 +14,7 @@ const App = () => {
       <Header />
       <Routes>
         <Fragment>
-          <Route path="/" element={<LogInPage />} />
+          <Route index element={<LogInPage />} />
           <Route path="/mainmenu" element={<MainMenu />} />
           <Route
             path="/ModulBewertungErstellen"
