@@ -15,7 +15,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<LogInPage />} />
         <Route path="/mainmenu" element={<MainMenu />} />
-        path="/ModulBewertungErstellen" element={<ModulBewertungErstellen />}
+        <Route
+          path="/ModulBewertungErstellen"
+          element={<ModulBewertungErstellen />}
         />
         <Route path="/ModulBewertung" element={<ModulBewertung />} />
         <Route path="/MainMenu" element={<MainMenu />} />
