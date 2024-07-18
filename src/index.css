@@ -2,6 +2,10 @@
   background-color: rgb(10, 0, 102); 
 }
 
+.mischokLogo-image {
+  height: 50px;
+}
+
 .header-title {
   display: flex;
   color: rgb(231, 231, 231);
