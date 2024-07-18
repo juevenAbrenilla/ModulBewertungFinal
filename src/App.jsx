@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import { Routes, Route } from "react-router-dom";
 import LogInPage from "./components/LogInPage";
+
 import MainPageWithHeader from "./components/MainPageWithHeader";
 import ModulBewertungErstellen from "./components/ModulBewertungErstellen";
 import ModulBewertung from "./components/ModulBewertung";
@@ -13,7 +14,7 @@ const App = () => {
       <Routes>
         <Fragment>
           <Route index element={<LogInPage />} />
-          <Route path="/MainPageWithHeader" element={<MainPageWithHeader />} />
+          <Route path="/" element={<MainPageWithHeader />} />
           <Route
             path="/ModulBewertungErstellen"
             element={<ModulBewertungErstellen />}
