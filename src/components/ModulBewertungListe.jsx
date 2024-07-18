@@ -74,7 +74,7 @@ const ModulBewertungListe = () => {
           </div>
         </div>
         <Link
-          to="/MainMenu"
+          to="/MainPageWithHeader"
           className="btn btn-dark buttons-m buttonList-container"
         >
           Zurück
