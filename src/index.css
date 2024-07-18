@@ -3,8 +3,16 @@
 }
 
 .mischokLogo-image {
-  height: 50px;
+  height: 60px;
 }
+
+.logo-container {  
+  display: flex;
+  width: 100px; 
+  position: absolute;
+  top: 20px;
+  left: 310px;
+} 
 
 .header-title {
   display: flex;
@@ -16,14 +24,6 @@
   margin-left: 120px;
   margin-bottom: 0;
 }
-
-.logo-container {  
-  display: flex;
-  width: 100px; 
-  position: absolute;
-  top: 25px;
-  left: 310px;
-} 
 
 .nav-link-space {
   margin-right: 20px;

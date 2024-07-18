@@ -55,13 +55,13 @@ const MainPageWithHeader = () => {
       <section>
         <div className="menu-container">
           <div className="container">
-            <div className="col text-center">
-              <div className="col-md">
+            <div className="row">
+              <div className="col-md-6">
                 <div className="card">
                   <img
                     src={ModulBewertungImage}
                     alt="Teachers deliberating"
-                    className="modulBewertung-image"
+                    className="modulBewertung-image card-img-top"
                   />
                   <div className="shadow p-4 bg-body-tertiary rounded">
                     <div className="card-body">
@@ -77,12 +77,12 @@ const MainPageWithHeader = () => {
                 </div>
               </div>
 
-              <div className="col-md">
+              <div className="col-md-6">
                 <div className="card">
                   <img
                     src={LernzielKontrolleImage}
                     alt="Student Studying"
-                    className="lernzielKontrolle-image"
+                    className="lernzielKontrolle-image card-img-top"
                   />
                   <div className="shadow p-4 bg-body-tertiary rounded">
                     <div className="card-body">
