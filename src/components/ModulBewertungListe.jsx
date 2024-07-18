@@ -10,17 +10,28 @@ const ModulBewertungListe = () => {
     const fetchProjects = async () => {
       try {
         const response = await fetch(
-          "https://cors-anywhere.herokuapp.com/https://academy-u202309-020-cc517cb3324e.herokuapp.com/api/dokubewertung"
+          "https://academy-u202309-020-cc517cb3324e.herokuapp.com/api/dokubewertung",
+          {
+            method: "GET",
+            headers: {
+              Accept: "application/json",
+              "Content-Type": "application/json",
+            },
+            credentials: "include", // Fügt Cookies zur Anfrage hinzu, falls erforderlich
+          }
         );
         if (!response.ok) {
-          throw new Error("Network response was not ok");
+          throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
         setProjects(data);
-        setIsLoading(false);
       } catch (error) {
-        console.error("There was a problem fetching the projects:", error);
+        console.error(
+          "Es gab ein Problem beim Abrufen der Projekte:",
+          error.message
+        );
         setError(error.message);
+      } finally {
         setIsLoading(false);
       }
     };
@@ -29,7 +40,7 @@ const ModulBewertungListe = () => {
   }, []);
 
   if (isLoading) return <div>Lädt...</div>;
-  if (error) return <div>Fehler: {error}</div>;
+  if (error) return <div>Fehler beim Laden der Daten: {error}</div>;
 
   return (
     <>
@@ -39,7 +50,7 @@ const ModulBewertungListe = () => {
             <thead>
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">Projekt Titel</th>
+                <th scope="col">Doku Bewertung Titel</th>
               </tr>
             </thead>
             <tbody>
