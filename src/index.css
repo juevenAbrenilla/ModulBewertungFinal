@@ -1,14 +1,10 @@
 .navbar {
-  background-color: rgb(197, 197, 197); 
-}
-
-.mischokLogo-image {
-  height: 50px;
+  background-color: rgb(10, 0, 102); 
 }
 
 .header-title {
   display: flex;
-  color: #dddddd;
+  color: rgb(231, 231, 231);
   font-family: Arial;
   font-size: 35px;
   font-weight: bold;

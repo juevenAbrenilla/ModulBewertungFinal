@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const MainPageWithHeader = () => {
   const [projectTitle] = useState("");
-  const MischokLogo = require("../images/MischokLogo.jpg");
+  const MischokLogo = require("../images/MischokLogoWhite02.png");
   const ModulBewertungImage = require("../images/teachers-rating.jpg");
   const LernzielKontrolleImage = require("../images/goal.jpg");
 
@@ -14,7 +14,7 @@ const MainPageWithHeader = () => {
           <div className="logo-container">
             <img
               src={MischokLogo}
-              alt="Microsoft Logo"
+              alt="Mischok Logo"
               className="mischokLogo-image"
             />
           </div>
