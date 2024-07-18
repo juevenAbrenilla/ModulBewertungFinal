@@ -52,33 +52,34 @@ const ModulBewertungListe = () => {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-      ></div>
-      <div className="ModulBewertungListe-container">
-        <div className="container">
-          <table className="table">
-            <thead>
-              <tr>
-                <th scope="col">ID #</th>
-                <th scope="col">Doku Bewertung Titel</th>
-              </tr>
-            </thead>
-            <tbody>
-              {projects.map((project) => (
-                <tr key={project.id}>
-                  <th scope="row">{project.id}</th>
-                  <td>{project.titel}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <Link
-        to="/MainMenu"
-        className="btn btn-dark buttons-m buttonList-container"
       >
-        Zurück
-      </Link>
+        <div className="ModulBewertungListe-container">
+          <div className="container">
+            <table className="table">
+              <thead>
+                <tr>
+                  <th scope="col">ID #</th>
+                  <th scope="col">Doku Bewertung Titel</th>
+                </tr>
+              </thead>
+              <tbody>
+                {projects.map((project) => (
+                  <tr key={project.id}>
+                    <th scope="row">{project.id}</th>
+                    <td>{project.titel}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <Link
+          to="/MainMenu"
+          className="btn btn-dark buttons-m buttonList-container"
+        >
+          Zurück
+        </Link>
+      </div>
     </>
   );
 };
