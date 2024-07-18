@@ -52,6 +52,8 @@
 }
 
 .ModulBewertungListe-container {  
+  display: flex;
+  position: absolute;
   background-color: #f8f9fa;
   border: 1px solid #c7e0fa;
   border-radius: 5px;
