@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 const ModulBewertungListe = () => {
   const [projects, setProjects] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -15,13 +17,19 @@ const ModulBewertungListe = () => {
         }
         const data = await response.json();
         setProjects(data);
+        setIsLoading(false);
       } catch (error) {
         console.error("There was a problem fetching the projects:", error);
+        setError(error.message);
+        setIsLoading(false);
       }
     };
 
     fetchProjects();
   }, []);
+
+  if (isLoading) return <div>Lädt...</div>;
+  if (error) return <div>Fehler: {error}</div>;
 
   return (
     <>
@@ -31,7 +39,7 @@ const ModulBewertungListe = () => {
             <thead>
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">Projekt Title</th>
+                <th scope="col">Projekt Titel</th>
               </tr>
             </thead>
             <tbody>
