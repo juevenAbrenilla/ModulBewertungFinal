@@ -3,13 +3,20 @@ import { Link } from "react-router-dom";
 
 const MainPageWithHeader = () => {
   const [projectTitle] = useState("");
+  const MischokLogo = require("../images/WhiteLogo.svg");
+  const ModulBewertungImage = require("../images/teachers-rating.jpg");
+  const LernzielKontrolleImage = require("../images/goal.jpg");
 
   return (
     <>
       <nav className="navbar navbar-expand-md">
         <div className="container">
           <div className="logo-container">
-            <img src="../images/WhiteLogo.svg" alt="Mischok Logo" />
+            <img
+              src={MischokLogo}
+              alt="Microsoft Logo"
+              className="mischokLogo-image"
+            />
           </div>
           <p className="header-title">Modul Bewertung</p>
           <div className="collapse navbar-collapse">
@@ -49,9 +56,9 @@ const MainPageWithHeader = () => {
             <div className="col-md">
               <div className="card">
                 <img
-                  src="../images/teachers-rating.jpg"
-                  className="card-img-top"
-                  alt="..."
+                  src={ModulBewertungImage}
+                  alt="Teachers deliberating"
+                  className="modulBewertung-image"
                 />
                 <div className="shadow p-4 bg-body-tertiary rounded">
                   <div className="card-body">
@@ -70,9 +77,9 @@ const MainPageWithHeader = () => {
             <div className="col-md">
               <div className="card">
                 <img
-                  src="../images/goal.jpg"
-                  className="card-img-top"
-                  alt="..."
+                  src={LernzielKontrolleImage}
+                  alt="Student Studying"
+                  className="lernzielKontrolle-image"
                 />
                 <div className="shadow p-4 bg-body-tertiary rounded">
                   <div className="card-body">

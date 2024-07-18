@@ -2,6 +2,10 @@
   background-color: rgb(0, 23, 66); 
 }
 
+.mischokLogo-image {
+  height: 50px;
+}
+
 .header-title {
   display: flex;
   color: #dddddd;
@@ -54,6 +58,7 @@
 .ModulBewertungListe-container {  
   display: flex;
   position: absolute;
+  left: auto;
   background-color: #f8f9fa;
   border: 1px solid #c7e0fa;
   border-radius: 5px;
