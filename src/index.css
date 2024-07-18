@@ -2,10 +2,6 @@
   background-color: rgb(10, 0, 102); 
 }
 
-.mischokLogo-image {
-  height: 60px;
-}
-
 .logo-container {  
   display: flex;
   width: 100px; 

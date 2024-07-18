@@ -52,47 +52,43 @@ const MainPageWithHeader = () => {
         </nav>
       </section>
 
-      <section>
-        <div className="menu-container">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-6">
-                <div className="card">
-                  <img
-                    src={ModulBewertungImage}
-                    alt="Teachers deliberating"
-                    className="modulBewertung-image card-img-top"
-                  />
-                  <div className="shadow p-4 bg-body-tertiary rounded">
-                    <div className="card-body">
-                      <h2 className="card-title pt-3 pb-2">Modul Bewertung</h2>
-                      <Link
-                        to="/ModulBewertungErstellen"
-                        className="btn btn-primary px-4"
-                      >
-                        Erstellen
-                      </Link>
-                    </div>
+      <section className="vh-100 d-flex align-items-center">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-md-6 col-lg-5 mb-4 mb-md-0">
+              <div className="card">
+                <img
+                  src={ModulBewertungImage}
+                  alt="Teachers deliberating"
+                  className="modulBewertung-image card-img-top"
+                />
+                <div className="shadow p-4 bg-body-tertiary rounded">
+                  <div className="card-body">
+                    <h2 className="card-title pt-3 pb-2">Modul Bewertung</h2>
+                    <Link
+                      to="/ModulBewertungErstellen"
+                      className="btn btn-primary px-4"
+                    >
+                      Erstellen
+                    </Link>
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div className="col-md-6">
-                <div className="card">
-                  <img
-                    src={LernzielKontrolleImage}
-                    alt="Student Studying"
-                    className="lernzielKontrolle-image card-img-top"
-                  />
-                  <div className="shadow p-4 bg-body-tertiary rounded">
-                    <div className="card-body">
-                      <h2 className="card-title pt-3 pb-2">
-                        Lernzielkontrolle
-                      </h2>
-                      <Link to="/" className="btn btn-primary">
-                        Erstellen
-                      </Link>
-                    </div>
+            <div className="col-md-6 col-lg-5">
+              <div className="card">
+                <img
+                  src={LernzielKontrolleImage}
+                  alt="Student Studying"
+                  className="lernzielKontrolle-image card-img-top"
+                />
+                <div className="shadow p-4 bg-body-tertiary rounded">
+                  <div className="card-body">
+                    <h2 className="card-title pt-3 pb-2">Lernzielkontrolle</h2>
+                    <Link to="/" className="btn btn-primary">
+                      Erstellen
+                    </Link>
                   </div>
                 </div>
               </div>
