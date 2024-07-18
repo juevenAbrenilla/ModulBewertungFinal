@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const MainPageWithHeader = () => {
   const [projectTitle] = useState("");
-  const MischokLogo = require("../images/MischokLogoWhite02.png");
+  const MischokLogo = require("../images/MischokLogoWhite01.png");
   const ModulBewertungImage = require("../images/teachers-rating.jpg");
   const LernzielKontrolleImage = require("../images/goal.jpg");
 
@@ -55,7 +55,7 @@ const MainPageWithHeader = () => {
       <section>
         <div className="menu-container">
           <div className="container">
-            <div className="row text-center">
+            <div className="col text-center">
               <div className="col-md">
                 <div className="card">
                   <img

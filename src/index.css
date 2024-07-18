@@ -31,6 +31,7 @@
 
 .menu-container {
   display: flex; 
+  position: absolute;
   background-color: rgb(189, 204, 211);
   padding-top: 150px;
   padding-bottom: 150px;
