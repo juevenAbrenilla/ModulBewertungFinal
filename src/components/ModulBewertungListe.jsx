@@ -44,43 +44,44 @@ const ModulBewertungListe = () => {
   if (error) return <div>Fehler beim Laden der Daten: {error}</div>;
 
   return (
-    <>
-      <div
-        style={{
-          height: "100vh",
-          backgroundImage: `url(${backgroundImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="ModulBewertungListe-container">
-          <div className="container">
-            <table className="table">
-              <thead>
-                <tr>
-                  <th scope="col">ID #</th>
-                  <th scope="col">Doku Bewertung Titel</th>
-                </tr>
-              </thead>
-              <tbody>
-                {projects.map((project) => (
-                  <tr key={project.id}>
-                    <th scope="row">{project.id}</th>
-                    <td>{project.titel}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <Link
-          to="/MainPageWithHeader"
-          className="btn btn-dark buttons-m buttonList-container"
-        >
-          Zurück
-        </Link>
+    <div
+      style={{
+        height: "100vh",
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <div className="container" style={{ maxWidth: "800px" }}>
+        <table className="table table-striped table-bordered">
+          <thead className="thead-dark">
+            <tr>
+              <th scope="col">ID #</th>
+              <th scope="col">Doku Bewertung Titel</th>
+            </tr>
+          </thead>
+          <tbody>
+            {projects.map((project) => (
+              <tr key={project.id}>
+                <th scope="row">{project.id}</th>
+                <td>{project.titel}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
-    </>
+      <Link
+        to="/MainPageWithHeader"
+        className="btn btn-dark mt-4"
+        style={{ width: "200px" }}
+      >
+        Zurück
+      </Link>
+    </div>
   );
 };
 
