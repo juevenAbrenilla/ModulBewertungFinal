@@ -76,7 +76,7 @@ const ModulBewertungListe = () => {
       </div>
       <Link
         to="/MainPageWithHeader"
-        className="btn btn-dark mt-4"
+        className="btn btn-info mt-4"
         style={{ width: "200px" }}
       >
         Zurück
