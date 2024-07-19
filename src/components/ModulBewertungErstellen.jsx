@@ -62,7 +62,7 @@ const ModulBewertungErstellen = () => {
 
             <Link
               to={{
-                pathname: "/MainMenu",
+                pathname: "/MainPageWithHeader",
                 state: { projectTitle: projectTitle },
               }}
               className="btn btn-dark mx-2"
